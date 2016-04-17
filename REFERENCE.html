@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOOTSTRAP REFERENCE</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <style>
+  * {
+    font-size:16px;
+  }
+body {
+  margin:1em;
+
+}
+  </style>
+</head>
+<body>
+  <div class="container">I am a regular container using class='.container'</div>
+  <div class="container-fluid">I am a regular container using class='.container-fluid'</div>
+  <hr>
+  <h1>Buttons</h1>
+  <fieldset>
+  <legend>Button elements:</legend>
+  <a href="" class="btn btn-default">Anchor tag as button</a>
+  <input type="text" class="btn btn-default" placeholder='Input as button'><br>
+ </fieldset>
+
+ <fieldset>
+ <legend>Button Colors:</legend>
+ <button class='btn btn-default'>Default btn-default</button>
+ <button class='btn btn-primary'>Primary btn-primary</button>
+ <button class='btn btn-success'>Success btn-success</button>
+ <button class='btn btn-info'>Info btn-info</button>
+ <button class='btn btn-warning'>Warning btn-warning</button>
+ <button class='btn btn-danger'>Danger btn-danger</button>
+ </fieldset>
+
+ <fieldset>
+ <legend>Button Sizes:</legend>
+ <button class='btn btn-default btn-xs'>Extra Small btn-xs</button>
+ <button class='btn btn-default btn-sm'>Small btn-sm</button>
+ <button class='btn btn-default'>Default</button>
+ <button class='btn btn-default btn-lg'>Large btn-lg</button>
+ <button class='btn btn-default btn-block'>Button size "Block Level"  btn-block</button>
+ </fieldset>
+
+ <fieldset>
+ <legend>Button active:</legend>
+ <button class='btn btn-default active'>I'm an active button</button>
+ <button class='btn btn-default' disabled='disabled'>I am a disabled button</button>
+ <a class='btn btn-default disabled' >I am a disabled Anchor tag</a>
+ </fieldset>
+
+  <div>Notes:<br>
+  role='button' should be used on anchor tags if they are given the btn class
+and the link isn't going to another page, do this for screen readers</div>
+
+<h1>Tables</h1>
+<table class='table'>
+  <tr>
+    <th> </th><th>class of table</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Added a class of table</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Second row</td>
+  </tr>
+</table>
+
+<table class='table table-striped'>
+  <tr>
+    <th> </th><th>table-striped</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Added a class of table</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Second row</td>
+  </tr>
+</table>
+
+<table class='table table-bordered'>
+  <tr>
+    <th> </th><th>table-bordered</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Added a class of table</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Second row</td>
+  </tr>
+</table>
+
+<table class='table table-hover'>
+  <tr>
+    <th> </th><th>table-hover</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Added a class of table</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Second row</td>
+  </tr>
+</table>
+
+<table class='table table-condensed'>
+  <tr>
+    <th> </th><th>table-condensed</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Does not show condensed well</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Second row</td>
+  </tr>
+</table>
+
+<table class='table'>
+  <tr>
+    <th> </th><th>Table colors</th>
+  </tr>
+  <tr class='active'>
+    <td>1</td><td>TR has class='active'</td>
+  </tr>
+  <tr class='success'>
+    <td>1</td><td>TR has class='success'</td>
+  </tr>
+  <tr class='info'>
+    <td>1</td><td>TR has class='info'</td>
+  </tr>
+  <tr class='warning'>
+    <td>1</td><td>TR has class='warning'</td>
+  </tr>
+  <tr class='danger'>
+    <td>1</td><td>TR has class='danger'</td>
+  </tr>
+  <tr>
+    <td class='info'>1</td><td class='warning'>cells can have color too</td>
+  </tr>
+</table>
+
+<div class="table-responsive">
+  <table class='table'>
+  <tr class='danger'>
+    <td>1</td><td>Table wrapped in div.table-responsive</td>
+  </tr>
+  <tr>
+    <td>1</td><td >I am responsive with scroll bars as needed.</td>
+  </tr>
+  </table>
+</div>
+
+<h1>Responsive images</h1>
+Using img-responsive, and image fills the col available to it.<br>
+img-responsive
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"><img src="Parrish1.jpg" alt="" class="img-responsive"></div>
+    <div class="col-sm-4"><img src="Parrish2.jpg" alt="" class="img-responsive"></div>
+    <div class="col-sm-4"><img src="Parrish3.jpg" alt="" class="img-responsive"></div>
+  </div>
+</div>
+img-responsive center-block
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4"><img src="Parrish1.jpg" alt="" class="img-responsive center-block"></div>
+    <div class="col-xs-4"><img src="Parrish2.jpg" alt="" class="img-responsive center-block"></div>
+    <div class="col-xs-4"><img src="Parrish3.jpg" alt="" class="img-responsive center-block"></div>
+  </div>
+</div>
+
+<pre>
+// Overriding the .img-responsive class
+@media (max-width:767px) { // Target: extra small
+  .img-responsive {
+    max-width:50%;
+    min-width:200px; // Prevent image form getting too small
+  }
+
+}
+</pre>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4"><img src="Parrish1.jpg" alt="" class="img-responsive img-rounded"><br>img-rounded</div>
+    <div class="col-xs-4"><img src="Parrish2.jpg" alt="" class="img-responsive img-circle"><br>img-circle</div>
+    <div class="col-xs-4"><img src="Parrish3.jpg" alt="" class="img-responsive img-thumbnail"><br>img-thumbnail</div>
+  </div><br>
+  Remember about the col-size-offset-# option
+</div>
+
+<h1>Text colors</h1>
+<div class=' '>class=' NO class added  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-muted'>class='text-muted' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-primary'>class='text-primary' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-success'>class='text-success' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-info'>class='text-info' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-warning'>class='text-warning' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='text-danger'>class='text-danger' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+
+<h1>Text background colors</h1>
+<div class='bg-muted'>class='bg-muted' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='bg-primary'>class='bg-primary' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='bg-success'>class='bg-success' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='bg-info'>class='bg-info' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='bg-warning'>class='bg-warning' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+<div class='bg-danger'>class='bg-danger' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam nesciunt cupiditate.</div>
+
+<h1>Float</h1>
+    <div>
+        <img class='pull-left' src="Parrish1.jpg">class='pull-left' Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Autem, laboriosam
+        nesciunt cupiditate.
+    </div>
+    <hr>
+    <div>
+        <img class='pull-right' src="Parrish2.jpg">class='pull-right' Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam
+        nesciunt cupiditate.
+    </div>
+    <div>
+        <img class='center-block' src="Parrish3.jpg">class='center-block' Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam
+        nesciunt cupiditate.
+    </div>
+
+<h1>Helper classes</h1>
+<div>
+  <ul>
+    <li>show</li>
+    <li>hide</li>
+    <li>invisible</li>
+    <li>text-hide (color === white?) // Keeps text in flow for SEO</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+</div>
+
+<h1>Utility classes</h1>
+<div>Visibility can be controlled by breakpoints using:<pre>
+visible-size-display where:
+visibility = visibility | hidden
+size = xs | sm | md | lg | print
+display = block | inline | inline-block | print</pre>
+</div>
+<p><span class='h1'>Big start</span> to a regular sentace using h1 class.</p>
+<p><span class='h1 visible-sm-inline-block'>Big start</span> same but added visible-sm-inline-block</p>
+
+<h1>Forms</h1>
+<ul>
+  <li>Advantage to using a field label: first, the label becomes clickable to focus the input, and second it helps screen readers.</li>
+  <li>Use placeholders</li>
+  <li>Automatically add nice form spacing by wrapping (label+input) in a div with class='form-group'</li>
+  <li>Checkboxes are handled differently.<br>
+    <div class="checkbox"><label for=""><input type="checkbox"> Checkbox label</label></div></br>
+Or like this:
+<div class="checkbox"><label for="idCB2"><input id='idCB2' type="checkbox" class='form-control'> Checkbox label</label></div>
+  </li>
+  <li>Using class='form-control' makes an input use 100% width, plus other small tweaks. Use on select field and text-area too.<br>
+    <label for="idTestInput">Label = Test field: </label>
+    <input id='idTestInput' class='form-control' type='text' >
+  </li>
+  <li>Remember linking radio buttons is done by using the same name in each</li>
+  <li>This should be centered or on right: <input  class='btn btn-default pull-right' type='submit'></li>
+<li>Use class='radio-inline' on the label for horiz radio buttons, but must also remove the wrapper div with class='radio'</li>
+<li> for wide screens say md lg, use < form class='form-inline'</li>
+<li>Horizontal forms. add < form class='form-horizontal'.  Then add to the form-groups labels class='col-sm-2' and  class='col-sm-2' for the input.
+In other words, the form-group acts as a .row  and the form acts as a .container. And finally, the label needs an extra class called 'control-label'<br>
+This is a very good format for desktops, the stack the label/input for mobile.
+<form class='form-horizontal'>
+  <div class="form-group"><label class="col-sm-2 control-label" for="idEmail">H-label: </label><div class="col-sm-10"><input id="idEmail" type="text" class="form-control" ></div></div>
+</form>
+</li>
+</ul>
+
+<h1>Validation classes</h1>
+has-warning, has-error, has-success <br>
+On the label component add a class='control-label' in order for it to reflect the status colors.
+<form>
+  <div class="form-group has-warning"><label for="idInput1">Name:</label><input id="idInput1" type="text" class="form-control" ></div>
+</form>
+
+Adding validation feedback icons.  This requires a text inputs with class='form-control'. First add a class='has-feedback'
+<pre>
+
+&lt;div class='form-group has-success has-feedback'>&lt;label for="idInput2" class="control-label">&lt;/label>
+&lt;input id='idInput2' type="text" class="form-control">
+&lt;span class="glyphicon glyphicon-ok form-control-feedback">&lt;/span>
+</pre>
+The form-control-feedback will add a checkmark on the right when the field is valid. Use aria-hidden="true" to ensure this icon will not confuse
+screen readers. Instead add something like this for screen readers only:
+&lt;span id='nameStatus' class='sr-only'>Success&lt;/span> Finally, link this with the input field by adding this to the input: aria-describedby='nameStatus'
+
+<h1>Input groups</h1>
+Combine fields together with other elements.
+Notice "disabled" can be applied at different levels, like form, form-group and field-set
+<form>
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input type="text" class="form-control">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input type="text" class="form-control">
+      <span class="input-group-addon">.00</span>
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon"><input type="checkbox"></span>
+      <input type="text" class="form-control">
+    </div>
+<br>
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-btn"><button class='btn btn-default'>Search</button></span>
+    </div>
+
+
+  </div>
+</form>
+
+<h1>Dropdowns</h1>
+
+<div class="dropdown">
+  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make  SIMPLE<span class="caret"></span></button>
+  <ul class='dropdown-menu'>
+    <li>Ferrari</li>
+    <li>Maserati</li>
+    <li>Aston-Martin</li>
+  </ul>
+</div>
+<br>
+<div class="dropdown">
+  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (class='dropdown-header')<span class="caret"></span></button>
+  <ul class='dropdown-menu'>
+    <li class='dropdown-header'>Italian</li>
+    <li>Ferrari</li>
+    <li>Maserati</li>
+    <li class='dropdown-header'>British</li>
+    <li>Aston-Martin</li>
+  </ul>
+</div>
+<br>
+<div class="dropdown">
+  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (li role='separator' class='divider')<span class="caret"></span></button>
+  <ul class='dropdown-menu'>
+    <li>Ferrari</li>
+    <li>Maserati</li>
+    <li role='separator' class='divider'></li>
+    <li>Aston-Martin</li>
+  </ul>
+</div>
+<br>
+<div class="dropdown">
+  <div class="btn-group">
+    <button type='button' class="btn btn-info" >Search makes</button>
+    <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make <span class="caret"></span></button>
+    <ul class='dropdown-menu'>
+      <li>Ferrari</li>
+      <li>Maserati</li>
+      <li role='separator' class='divider'></li>
+      <li>Aston-Martin</li>
+    </ul>
+  </div>
+</div>
+
+<h1>Button groups</h1>
+<div class='btn-group'>
+  <button type='button' class="btn btn-default" >btn-group Ferrari</button>
+  <button type='button' class="btn btn-default" >Maserati</button>
+  <button type='button' class="btn btn-default" >Aston-Martin</button>
+</div>
+<br><br>
+<div class='btn-group-vertical'>
+  <button type='button' class="btn btn-default" >Vertical Ferrari</button>
+  <button type='button' class="btn btn-default" >Maserati</button>
+  <button type='button' class="btn btn-default" >Aston-Martin</button>
+</div>
+
+<br><br>
+
+<br>
+<div class="btn-group btn-group-justified">
+  <div class='btn-group'>
+    <button type='button' class="btn btn-default" >Justified Ferrari</button></div>
+  <div class='btn-group'>
+    <button type='button' class="btn btn-default" >Maserati</button></div>
+  <div class='btn-group'>
+    <button type='button' class="btn btn-default" >Aston-Martin</button></div>
+  </div>
+</div>
+
+<h1>Navigation</h1>
+Three types of navs: tabs, pills, nav-bars
+<div class="container">
+  <div class="row">
+    <section class="col-xs-12">
+      <ul class="nav nav-tabs">
+        <li><a href="#">Anchor 1</a> ul class="nav nav-tabs"</li>
+        <li><a href="#" class="active">Anchor 2</a></li>
+        <li><a href="#">Anchor 3</a></li>
+      </ul>
+    </section>
+  </div>
+  <br>
+  <div class="row">
+    <section class="col-xs-12">
+      <ul class="nav nav-pills">
+        <li><a href="#">Anchor 1</a> ul class="nav nav-tabs" these are Pills which are rounded</li>
+        <li><a href="#" class="active">Anchor 2</a></li>
+        <li><a href="#">Anchor 3</a></li>
+      </ul>
+    </section>
+  </div>
+  <br>
+  <div class="row">
+    <section class="col-xs-12">
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#">Anchor 1</a> nav-stacked</li>
+        <li><a href="#" class="active">Anchor 2</a></li>
+        <li><a href="#">Anchor 3</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="row">
+    <section class="col-xs-12">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="#">Anchor 1</a> nav-justified</li>
+        <li><a href="#" class="active">Anchor 2</a></li>
+        <li><a href="#">Anchor 3</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+<br>
+This is wrapped &lt;nav> tag is for accessibility, letting screen readers know these are links
+<nav class='navbar navbar-default'>
+  <ul class="nav navbar-nav">
+    <li><a href="#">Anchor 1 (nav nav-bar) typically this would be at the top below body</a></li>
+    <li><a href="#" class="active">Anchor 2</a></li>
+    <li><a href="#">Anchor 3</a></li>
+  </ul>
+</nav>
+<br>
+<nav class='navbar navbar-inverse'>
+  <ul class="nav navbar-nav">
+    <li><a href="#">Anchor 1 (nav navbar) parent nav is navbar navbar-default</a></li>
+    <li><a href="#" class="active">Anchor 2</a></li>
+    <li><a href="#">Anchor 3</a></li>
+  </ul>
+</nav>
+
+<br>
+<pre>
+Make nav stick to the footer
+&lt;nav class='navbar navbar-inverse navbar-fixed-bottom'>
+  &lt;ul class="nav navbar-nav">
+    &lt;li><a href="#">Anchor 1 (nav navbar) parent nav is navbar navbar-default</a></li>
+    &lt;li><a href="#" class="active">Anchor 2</a></li>
+    <&lt;i><a href="#">Anchor 3</a></li>
+  &lt;/ul>
+&lt;/nav></pre>
+
+<br>
+<pre>
+To make the navbar line up with the other content, put it in a container
+
+&lt;nav class='navbar navbar-default  '>
+  &lt;div class='container'>
+    &lt;ul class="nav navbar-nav">
+      &lt;li><a href="#">Anchor 1 (nav navbar) parent nav is navbar navbar-default</a></li>
+      &lt;li><a href="#" class="active">Anchor 2</a></li>
+      <&lt;i><a href="#">Anchor 3</a></li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav></pre>
+
+<pre>
+To make the navbar stay fixed at the top add "navbar-fixed-top"
+The add a class to prevent the top of the content from going under the top nav 70px should do it
+&lt;nav class='navbar navbar-default  navbar-fixed-top'>
+  &lt;div class='container'>
+    &lt;ul class="nav navbar-nav">
+      &lt;li><a href="#">Anchor 1 (nav navbar) parent nav is navbar navbar-default</a></li>
+      &lt;li><a href="#" class="active">Anchor 2</a></li>
+      <&lt;i><a href="#">Anchor 3</a></li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav></pre>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

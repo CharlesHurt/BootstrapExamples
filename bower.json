@@ -1,0 +1,17 @@
+{
+  "name": "_Bootstrap",
+  "main": "index.js",
+  "authors": [
+    "Charles Hurt <charles@charleshurt.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
