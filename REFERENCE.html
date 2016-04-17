@@ -10,146 +10,203 @@
   }
 body {
   margin:1em;
-
 }
+
+.cSimpleBorder {
+  border:1px solid gray;
+}
+
+
+.panel-title {
+  font-size:20px;
+  font-weight:bold;
+}
+
   </style>
 </head>
 <body>
-  <div class="container">I am a regular container using class='.container'</div>
-  <div class="container-fluid">I am a regular container using class='.container-fluid'</div>
-  <hr>
-  <h1>Buttons</h1>
-  <fieldset>
-  <legend>Button elements:</legend>
-  <a href="" class="btn btn-default">Anchor tag as button</a>
-  <input type="text" class="btn btn-default" placeholder='Input as button'><br>
- </fieldset>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panels</h3>
+    </div>
+    <div class="panel-body">
+<pre>
+&lt;div class="panel panel-default">
+  &lt;div class="panel-heading"> &lt;h3 class="panel-title"> Heading content .panel-heading>h3.panel-title &lt;/h3> &lt;/div>
 
- <fieldset>
- <legend>Button Colors:</legend>
- <button class='btn btn-default'>Default btn-default</button>
- <button class='btn btn-primary'>Primary btn-primary</button>
- <button class='btn btn-success'>Success btn-success</button>
- <button class='btn btn-info'>Info btn-info</button>
- <button class='btn btn-warning'>Warning btn-warning</button>
- <button class='btn btn-danger'>Danger btn-danger</button>
- </fieldset>
+  &lt;div class="panel-body">Body content .panel-body &lt;/div>
 
- <fieldset>
- <legend>Button Sizes:</legend>
- <button class='btn btn-default btn-xs'>Extra Small btn-xs</button>
- <button class='btn btn-default btn-sm'>Small btn-sm</button>
- <button class='btn btn-default'>Default</button>
- <button class='btn btn-default btn-lg'>Large btn-lg</button>
- <button class='btn btn-default btn-block'>Button size "Block Level"  btn-block</button>
- </fieldset>
+  &lt;div class="panel-footer">Footer content .panel-footer&lt;/div>
+&lt;/div>
+</pre>
+</code>
+    </div>
+    <div class="panel-footer">
+      Contextual classes for panel: <code>.panel-default, .panel-primary, .panel-success, .panel-info, .panel-warning, or .panel-danger</code>
+    </div>
+  </div>
+</div>
 
- <fieldset>
- <legend>Button active:</legend>
- <button class='btn btn-default active'>I'm an active button</button>
- <button class='btn btn-default' disabled='disabled'>I am a disabled button</button>
- <a class='btn btn-default disabled' >I am a disabled Anchor tag</a>
- </fieldset>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Containers</h3>
+    </div>
+    <div class="panel-body">
 
-  <div>Notes:<br>
-  role='button' should be used on anchor tags if they are given the btn class
-and the link isn't going to another page, do this for screen readers</div>
+    <div class="container cSimpleBorder"><div class="row"><div class='col-xs-12'>I am a regular container using <code>.container</code></div></div></div><br>
+    <div class="container-fluid cSimpleBorder"><div class="row"><div class='col-xs-12'>I am a regular container using <code>.container-fluid</code></div></div></div>
+  </div>
+</div>
 
-<h1>Tables</h1>
-<table class='table'>
-  <tr>
-    <th> </th><th>class of table</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Added a class of table</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Second row</td>
-  </tr>
-</table>
+<div class="panel panel-default">
+  <div class="panel-heading"><h3 class="panel-title">Buttons</h3></div>
+  <div class="panel-body">
+    Alternate button elements <a class="btn btn-default">&lt;anchor> tag as button</a>
+    <input type="text" class="btn btn-default" placeholder='&lt;input> as button'><br>
+  </div>
 
-<table class='table table-striped'>
-  <tr>
-    <th> </th><th>table-striped</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Added a class of table</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Second row</td>
-  </tr>
-</table>
+  <div class="panel-body">
+    Button Colors: <button class='btn btn-default'>.btn.btn-default</button>
+    <button class='btn btn-primary'>.btn.btn-primary</button>
+    <button class='btn btn-success'>.btn.btn-success</button>
+    <button class='btn btn-info'>.btn.btn-info</button>
+    <button class='btn btn-warning'>.btn.btn-warning</button>
+    <button class='btn btn-danger'>.btn.btn-danger</button>
+  </div>
 
-<table class='table table-bordered'>
-  <tr>
-    <th> </th><th>table-bordered</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Added a class of table</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Second row</td>
-  </tr>
-</table>
+  <div class="panel-body">
+    Button Sizes:
+    <button class='btn btn-default btn-xs'>.btn-xs</button>
+    <button class='btn btn-default btn-sm'>.btn-sm</button>
+    <button class='btn btn-default'>Default</button>
+    <button class='btn btn-default btn-lg'>.btn-lg</button><br><br>
+    <button class='btn btn-info btn-block'>Block Level: .btn-block</button>
+  </div>
 
-<table class='table table-hover'>
-  <tr>
-    <th> </th><th>table-hover</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Added a class of table</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Second row</td>
-  </tr>
-</table>
+  <div class="panel-body">
+    Button active:
+    <button class='btn btn-default active'>  .active  </button>
+    <button class='btn btn-default' disabled='disabled'> disabled='disabled'</button>
+    <a class='btn btn-default disabled'>Anchor tag disabled </a>
+  </div>
 
-<table class='table table-condensed'>
-  <tr>
-    <th> </th><th>table-condensed</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Does not show condensed well</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Second row</td>
-  </tr>
-</table>
+  <div class="panel-footer">Notes: For screen readers <code>role='button'</code>
+    should be used on anchor tags if they are given the btn class
+    and the link isn't going to another page
+  </div>
+</div>
 
-<table class='table'>
-  <tr>
-    <th> </th><th>Table colors</th>
-  </tr>
-  <tr class='active'>
-    <td>1</td><td>TR has class='active'</td>
-  </tr>
-  <tr class='success'>
-    <td>1</td><td>TR has class='success'</td>
-  </tr>
-  <tr class='info'>
-    <td>1</td><td>TR has class='info'</td>
-  </tr>
-  <tr class='warning'>
-    <td>1</td><td>TR has class='warning'</td>
-  </tr>
-  <tr class='danger'>
-    <td>1</td><td>TR has class='danger'</td>
-  </tr>
-  <tr>
-    <td class='info'>1</td><td class='warning'>cells can have color too</td>
-  </tr>
-</table>
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Tables </h3> </div>
+
+  <div class="panel-body">
+    <table class='table'>
+      <tr>
+        <th> </th><th><code>table class='table'</code></th>
+      </tr>
+      <tr>
+        <td>1</td><td>First row</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Second row</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel-body">
+    <table class='table table-striped'>
+      <tr>
+        <th> </th><th><code>table class='table table-striped'</code></th>
+      </tr>
+      <tr>
+        <td>1</td><td>First row</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Second row</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel-body">
+    <table class='table table-bordered'>
+      <tr>
+        <th> </th><th><code>table class='table table-bordered'</code></th>
+      </tr>
+      <tr>
+        <td>1</td><td>First row</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Second row</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel-body">
+    <table class='table table-hover'>
+      <tr>
+        <th> </th><th><code>table class='table table-hover'</code></th>
+      </tr>
+      <tr>
+        <td>1</td><td>First row</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Second row</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel-body">
+    <table class='table table-condensed'>
+      <tr>
+        <th> </th><th><code>table class='table table-condensed'</code></th>
+      </tr>
+      <tr>
+        <td>1</td><td>Does not show condensed well</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Second row</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel-body">
+    <table class='table'>
+      <tr>
+        <th> </th><th>Table colors</th>
+      </tr>
+      <tr class='active'>
+        <td> </td><td>TR has <code>class='active'</code></td>
+      </tr>
+      <tr class='success'>
+        <td></td><td>TR has <code>class='success'</code></td>
+      </tr>
+      <tr class='info'>
+        <td></td><td>TR has <code>class='info'</code></td>
+      </tr>
+      <tr class='warning'>
+        <td></td><td>TR has <code>class='warning'</code></td>
+      </tr>
+      <tr class='danger'>
+        <td></td><td>TR has <code>class='danger'</code></td>
+      </tr>
+      <tr>
+        <td class='info'></td><td class='warning'>Cells can have color too <code>class='warning'</code></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 <div class="table-responsive">
   <table class='table'>
   <tr class='danger'>
-    <td>1</td><td>Table wrapped in div.table-responsive</td>
+    <td> </td><td>Table wrapped in <code>div.table-responsive</code></td>
   </tr>
   <tr>
-    <td>1</td><td >I am responsive with scroll bars as needed.</td>
+    <td> </td><td >I am <em>responsive with scroll bars</em> as needed.</td>
   </tr>
   </table>
 </div>
+
 
 <h1>Responsive images</h1>
 Using img-responsive, and image fills the col available to it.<br>
