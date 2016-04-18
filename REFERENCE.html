@@ -16,6 +16,10 @@ img {
   padding:1em;
 }
 
+.media img {
+  width:150px;
+}
+
 .cSimpleBorder {
   border:1px solid gray;
 }
@@ -28,6 +32,11 @@ img {
 </style>
 </head>
 <body>
+  HOW TO USE A GRID
+  make stuff xs-col-6 at xsmall and sm-col-4 at
+  create a grid of 9 imags to demo
+
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Panels</h3>
@@ -539,7 +548,8 @@ Make nav stick to the footer
     &lt;li><a href="#" class="active">Anchor 2</a></li>
     <&lt;i><a href="#">Anchor 3</a></li>
   &lt;/ul>
-&lt;/nav></pre>
+&lt;/nav>
+</pre>
 
 <br>
 <pre>
@@ -553,7 +563,8 @@ To make the navbar line up with the other content, put it in a container
       <&lt;i><a href="#">Anchor 3</a></li>
     &lt;/ul>
   &lt;/div>
-&lt;/nav></pre>
+&lt;/nav>
+</pre>
 
 <pre>
 To make the navbar stay fixed at the top add "navbar-fixed-top"
@@ -566,11 +577,13 @@ The add a class to prevent the top of the content from going under the top nav 7
       <&lt;i><a href="#">Anchor 3</a></li>
     &lt;/ul>
   &lt;/div>
-&lt;/nav></pre>
+&lt;/nav>
+</pre>
 
 <h1>iFrames for nav examples</h1>
-
-
+Notes
+One **li** should have class="active"
+It is not necessary to wrap the
 <iframe style='width:100%' src="NavPillHoriz.html"></iframe>
 <iframe style='width:100%' src="NavTabHoriz.html"></iframe>
 <iframe style='width:100%; height:200px' src="NavPillStacked.html"></iframe>
@@ -580,7 +593,158 @@ The add a class to prevent the top of the content from going under the top nav 7
 
 
 
+<BR>page-header
+<iframe style='width:100%; height:200px' src="Page-Header.html"></iframe>
 
+<BR>jumbotron
+<iframe style='width:100%; height:200px' src="Jumbotron.html"></iframe>
+<BR>
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Labels and Badges </h3> </div>
+
+  <div class="panel-body"><p>
+Here is an example of label <span class='label label-danger'>Shiny</span> all shiny and new!
+The size of these labels changes with context.  For example h1/label is bigger than h6/label. </p>
+<p>Badges differ slightly.  They are often used to indicate a number of sub-items or topics.
+For example, let say I have a sub menu and there are 3 items on this menu, then I might add
+a badge like this <button>See more... <span class="badge">3</span></button> Similar to labels, badges
+adapt to their context, including color.</p>
+  </div>
+
+  <div class="panel-footer">Footer content .panel-footer</div>
+</div>
+<BR>
+
+CARDS = IMAGES WITH CAPTIONS
+Using thumbnails.<br>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish1.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish2.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish3.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish3.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish2.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2">
+  <div class="thumbnail">
+    <img src="Parrish1.jpg" alt="">
+    <div class="caption">
+      <h3>Parrish One</h3>
+      <p>His very first attempt at painint</p>
+      <a href="" class='btn btn-info'>more info</a>
+    </div>
+  </div>
+</div>
+<hr>
+MEDIA STYLES<br>
+Good for places where there are not columns<br>
+<div class="media">
+  <div class="media-left">
+    <a href=""><img src="Parrish1.jpg" alt="" class="media-object"></a>
+  </div>
+  <div class="media-body">
+    <h3 class="media-heading">Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href=""><img src="Parrish2.jpg" alt="" class="media-object"></a>
+  </div>
+  <div class="media-body">
+    <h3 class="media-heading">Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left  media-top">
+    <a href=""><img src="Parrish3.jpg" alt="" class="media-object"></a>
+  </div>
+  <div class="media-body">
+    <h3 class="media-heading">Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Responsive video </h3> </div>
+
+  <div class="panel-body">
+    <div class="embed-responsive embed-responsive-4by3">
+      <video src="brushing.mp4" class="embed-responsive-item" autoplay controls muted></video>
+      <h3>Video Title</h3>
+      <p>Video description: 16by9 is the other aspect ratio</p >
+    </div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> List groups </h3> </div>
+
+  <div class="panel-body">
+<ul class="list-group">
+  <li class="list-group-item">John Doe <span class="badge">33</span></li>
+  <li class="list-group-item">Jane Doe</li>
+  <li class="list-group-item">Joe Doe (this for list only; see below if need links)</li>
+</ul>
+  </div>
+
+  &nbsp;&nbsp;Using div and a tages
+  <div class="panel-body">
+  <div class="list-group">
+  <a class="list-group-item">John Doe <span class="badge">33</span></a>
+  <a class="list-group-item active">Jane Doe (I am active)</a>
+  <a class="list-group-item"><h3 class="list-group-item-heading">Joe Doe</h3><p class="list-group-item-text"> &lt;h3 class="list-group-item-heading">Joe Doe</h3>&lt;p class="list-group-item-text">   </p></a>
+</div>
+  </div>
+
+  <div class="panel-footer">These are particularly common for mobile</div>
+</div>
+</BR></BR>
+////////////////////////////////////////////////////
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
