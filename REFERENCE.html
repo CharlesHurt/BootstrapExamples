@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>BOOTSTRAP REFERENCE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 <style>
   * {
@@ -53,6 +54,40 @@ img {
 </pre>
 </code>
     </div>
+  <div class="panel-body">
+    <div class="well">This is a WELL <code>(&lt;div class="well">)</code> which means it is INSET. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim ex ducimus facere repudiandae a velit perferendis necessitatibus est, debitis consequatur inventore atque voluptates, id, voluptate temporibus nemo. Eum quae libero nam sint aliquid consequatur, fugiat quisquam? Facilis ratione dolore tenetur quam esse nostrum deserunt quod, minus repudiandae ab recusandae.</div>
+  </div>
+  <div class="panel-body">
+    <div class="well well-lg">This is a WELL <code>(&lt;div class="well well-lg">)</code> which means it is INSET. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim ex ducimus facere repudiandae a velit perferendis necessitatibus est, debitis consequatur inventore atque voluptates, id, voluptate temporibus nemo. Eum quae libero nam sint aliquid consequatur, fugiat quisquam? Facilis ratione dolore tenetur quam esse nostrum deserunt quod, minus repudiandae ab recusandae.</div>
+  </div>
+<div class="table-responsive">
+  <table class="table">
+    <htead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+      </tr>
+    </htead>
+    <tbody>
+      <tr>
+        <td colspan='3'>I am a table OUTSIDE OF panel-body. Because this table is responsive it will add scroll bars when necessary.</td>
+
+      </tr>
+      <tr>
+        <td>asd</td>
+        <td>sd</td>
+        <td>sdf</td>
+      </tr>
+      <tr>
+        <td>byuky</td>
+        <td>hjk</td>
+        <td>hj</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
     <div class="panel-footer">
       Contextual classes for panel: <code>.panel-default, .panel-primary, .panel-success, .panel-info, .panel-warning, or .panel-danger</code>
     </div>
@@ -591,8 +626,6 @@ It is not necessary to wrap the
 <iframe style='width:100%; height:200px' src="NavPillJustified.html"></iframe>
 <iframe style='width:100%; height:200px' src="NavTabJustified.html"></iframe>
 
-
-
 <BR>page-header
 <iframe style='width:100%; height:200px' src="Page-Header.html"></iframe>
 
@@ -734,16 +767,138 @@ Good for places where there are not columns<br>
 
   &nbsp;&nbsp;Using div and a tages
   <div class="panel-body">
-  <div class="list-group">
-  <a class="list-group-item">John Doe <span class="badge">33</span></a>
-  <a class="list-group-item active">Jane Doe (I am active)</a>
-  <a class="list-group-item"><h3 class="list-group-item-heading">Joe Doe</h3><p class="list-group-item-text"> &lt;h3 class="list-group-item-heading">Joe Doe</h3>&lt;p class="list-group-item-text">   </p></a>
-</div>
+    <div class="list-group">
+      <a class="list-group-item">John Doe <span class="badge">33</span></a>
+      <a class="list-group-item active">Jane Doe (I am active)</a>
+      <a class="list-group-item"><h3 class="list-group-item-heading">Joe Doe</h3><p class="list-group-item-text"> &lt;h3 class="list-group-item-heading">Joe Doe</h3>&lt;p class="list-group-item-text">   </p></a>
+    </div>
   </div>
-
   <div class="panel-footer">These are particularly common for mobile</div>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Carousels (hidden for xs)</h3> </div>
+
+  <div class="panel-body">
+    <div class="carousel slide hidden-xs " data-ride='carousel' id='idFeatured'>
+      <ol class="carousel-indicators">
+        <li data-target='#idFeatured' data-slide-to='0' class='active'></li>
+        <li data-target='#idFeatured' data-slide-to='1'></li>
+        <li data-target='#idFeatured' data-slide-to='2'></li>
+      </ol>
+      <div class="carousel-inner">
+           <div class="item active"><img src="Parrish1.jpg" alt=""><div class="carousel-caption"><h3>Headline 1</h3><p>This is caption text1</p></div></div>
+           <div class="item"><img src="Parrish2.jpg" alt=""><div class="carousel-caption"><h3>Headline 2</h3><p>This is caption text2</p></div></div>
+           <div class="item"><img src="Parrish3.jpg" alt=""><div class="carousel-caption"><h3>Headline 3</h3><p>This is caption text3</p></div></div>
+
+      </div>
+      <a href="#idFeatured" class='left carousel-control' role='button' data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a href="#idFeatured" class='right carousel-control' role='button' data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+  </div>
+
+  <div class="panel-footer">Notes:
+    <ul>
+      <li>Full-width images should look good at least up to 1200px</li>
+      <li>All images should be the same size.</li>
+      <li>Use class=hidden-xs to hide the carousel on extram small devices</li>
+      <li>Use images large enought to hide the background gradient</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Tabbed Content </h3> </div>
+
+  <div class="panel-body">
+    <ul class="nav nav-tabs" role='tablist'>
+      <li role="presentation" class='active'><a href="#idContent1" role="tab" data-toggle="tab" >Content 1</a></li>
+      <li role="presentation"><a href="#idContent2" role="tab" data-toggle="tab" >Content 2</a></li>
+      <li role="presentation"><a href="#idContent3" role="tab" data-toggle="tab" >Content 3</a></li>
+    </ul>
+  </div>
+  <div class="tab-content">
+    <div id='idContent1' role="tabpanel" class="tab-pane fade in active">
+      <h3>Title 1</h3><p>Content 1</p>
+    </div>
+    <div id='idContent2' role="tabpanel" class="tab-pane fade">
+      <h3>Title 2</h3><p>Content 2</p>
+    </div>
+    <div id='idContent3' role="tabpanel" class="tab-pane fade">
+      <h3>Title 3</h3><p>Content 3</p>
+    </div>
+  </div>
+  <div class="panel-footer">Notes:
+    <ul>
+      <li>The content panels (tab-pane's) can be located anywhere</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Accordions </h3> </div>
+
+  <div class="panel-body">This is a hide and reveal toggle<br>
+    <a href="#idAccordion1" data-toggle="collapse" class="btn btn-primary">Accordion 1</a>
+    <div id='idAccordion1' class="collapse">
+      <p>Accordion 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ab.</p>
+    </div>
+    <a href="#idAccordion2" data-toggle="collapse" class="btn btn-primary">Accordion 2</a>
+    <div id='idAccordion2' class="collapse">
+      <p>Accordion 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ab.</p>
+    </div>
+    <a href="#idAccordion3" data-toggle="collapse" class="btn btn-primary">Accordion 3</a>
+    <div id='idAccordion3' class="collapse">
+      <p>Accordion 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ab.</p>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="cSimpleBorder">This is a complete example<br>
+      <div id="idAccordion" class="panel-group" >
+        <div class="panel panel-default">
+          <div id="idHeading1" class="panel-heading">
+            <h3 class="panel-title"><a href="#idPanel1" data-toggle="collapse" data-parent='idAccordion'>Expand 1</a></h3>
+          </div>
+        </div>
+        <div id='idPanel1' class="panel-collapse collapse in">
+          <div class="panel-body">
+            <p>This is the body of panel 1111 ***Notice this has a class of "in"***Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi corrupti, dolore repellendus eos necessitatibus voluptatum ea! Cumque eligendi, nostrum tenetur doloremque omnis magni, incidunt aliquam quos, asperiores quis optio eos!</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div id="idHeading2" class="panel-heading">
+            <h3 class="panel-title"><a href="#idPanel2" data-toggle="collapse" data-parent='idAccordion'>Expand 2</a></h3>
+          </div>
+        </div>
+        <div id='idPanel2' class="panel-collapse collapse ">
+          <div class="panel-body">
+            <p>This is the body of panel 2222  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi corrupti, dolore repellendus eos necessitatibus voluptatum ea! Cumque eligendi, nostrum tenetur doloremque omnis magni, incidunt aliquam quos, asperiores quis optio eos!</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div id="idHeading3" class="panel-heading">
+            <h3 class="panel-title"><a href="#idPanel3" data-toggle="collapse" data-parent='idAccordion'>Expand 3</a></h3>
+          </div>
+        </div>
+        <div id='idPanel3' class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>This is the body of panel 33333 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi corrupti, dolore repellendus eos necessitatibus voluptatum ea! Cumque eligendi, nostrum tenetur doloremque omnis magni, incidunt aliquam quos, asperiores quis optio eos!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">Notes:
+    <ul>
+      <li>The "in" class does the initial reveal</li>
+    </ul>
+  </div>
+</div>
+
 </BR></BR>
+
 ////////////////////////////////////////////////////
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
