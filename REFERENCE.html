@@ -904,14 +904,27 @@ Good for places where there are not columns<br>
   <div class="panel-body">
     This is a 2-step process.
     <ol>
-      <li>Insert code like this: ...<code>&lt;a href="#" data-toggle="tooltip" data-placement="top" title="All about racing ..."> racing&lt;/a></code>...</li>
+      <li>Insert code like this: ...<code>&lt;a data-toggle="tooltip" data-placement="top" title="All about racing ..."> racing&lt;/a></code>...</li>
       <li>Insert jquery like this: <code>$(function() {$('[data-toggle="tooltip"]').tooltip()})</code></li>
     </ol>
 
- Here is an example <a href="#" data-toggle="tooltip" data-placement="top" title="All about racing ...">Racing</a>
+ Here is an example <a  data-toggle="tooltip" data-placement="top" title="All about racing ...">Racing TOOLTIP</a>
   </div>
 
-  <div class="panel-footer">Footer content .panel-footer</div>
+  <div class="panel-footer">TIP: Remove the <code>href</code> to prevent accidental link jumps</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Pop-overs (Look like tooltips but act like dialogs) </h3> </div>
+
+  <div class="panel-body">
+    <a  tabindex="0" class="btn btn-info" role='button'
+      data-container="body" data-toggle="popover" data-trigger="focus"
+      data-placement="bottom" data-title="BIG TITLE"
+      data-content="I am the content of this popover, and I say that is that! DISMISS ME BY CLICKING SOMEWHERE!">I am a popover</a>
+  </div>
+
+  <div class="panel-footer">TIP: Remove the <code>href</code> to prevent accidental link jumps</div>
 </div>
 </BR></BR>
 
@@ -921,6 +934,7 @@ Good for places where there are not columns<br>
   <script>
 $(function() {
   $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover()
 })
   </script>
 </body>
