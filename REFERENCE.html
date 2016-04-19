@@ -859,7 +859,7 @@ Good for places where there are not columns<br>
       <div id="idAccordion" class="panel-group" >
         <div class="panel panel-default">
           <div id="idHeading1" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel1" data-toggle="collapse" data-parent='idAccordion'>Expand 1</a></h3>
+            <h3 class="panel-title"><a href="#idPanel1" data-toggle="collapse" data-parent='#idAccordion'>Expand 1</a></h3>
           </div>
         </div>
         <div id='idPanel1' class="panel-collapse collapse in">
@@ -869,7 +869,7 @@ Good for places where there are not columns<br>
         </div>
         <div class="panel panel-default">
           <div id="idHeading2" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel2" data-toggle="collapse" data-parent='idAccordion'>Expand 2</a></h3>
+            <h3 class="panel-title"><a href="#idPanel2" class='collapsed' data-toggle="collapse" data-parent='#idAccordion'>Expand 2</a></h3>
           </div>
         </div>
         <div id='idPanel2' class="panel-collapse collapse ">
@@ -879,7 +879,7 @@ Good for places where there are not columns<br>
         </div>
         <div class="panel panel-default">
           <div id="idHeading3" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel3" data-toggle="collapse" data-parent='idAccordion'>Expand 3</a></h3>
+            <h3 class="panel-title"><a href="#idPanel3" class='collapsed' data-toggle="collapse" data-parent='#idAccordion'>Expand 3</a></h3>
           </div>
         </div>
         <div id='idPanel3' class="panel-collapse collapse">
@@ -897,10 +897,31 @@ Good for places where there are not columns<br>
   </div>
 </div>
 
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Adding a tool tip </h3> </div>
+
+  <div class="panel-body">
+    This is a 2-step process.
+    <ol>
+      <li>Insert code like this: ...<code>&lt;a href="#" data-toggle="tooltip" data-placement="top" title="All about racing ..."> racing&lt;/a></code>...</li>
+      <li>Insert jquery like this: <code>$(function() {$('[data-toggle="tooltip"]').tooltip()})</code></li>
+    </ol>
+
+ Here is an example <a href="#" data-toggle="tooltip" data-placement="top" title="All about racing ...">Racing</a>
+  </div>
+
+  <div class="panel-footer">Footer content .panel-footer</div>
+</div>
 </BR></BR>
 
 ////////////////////////////////////////////////////
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
 </body>
 </html>
