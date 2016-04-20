@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAV REFERENCE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<style>
+  * {
+    font-size:16px;
+  }
+body {
+  margin:1em;
+}
+
+img {
+  padding:1em;
+}
+
+.media img {
+  width:150px;
+}
+
+.cSimpleBorder {
+  border:1px solid gray;
+}
+
+.panel-title {
+  font-size:20px;
+  font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+  <h3>Breadcrumbs</h3>
+  Make an ol look like a breadcrumb<br>
+<ol class='breadcrumb'>
+  <li><a href="#">home</a></li>
+  <li><a href="#">level 2</a></li>
+  <li><a href="#">level 3</a></li>
+</ol>
+
+<h3>Pagers</h3>
+<ul class="pager">
+  <li class="previous disabled"><a href="#"><span aria-hidden='true'>&larr;</span> Older</a></li>
+  <li class="next"><a href="#">Newer <span aria-hidden='true'>&rarr;</span></a></li>
+</ul>
+
+
+<h3>Pagination</h3>
+<nav>
+  <ol class='pagination'>
+    <li><a href="#" aria-label="Previous">&laquo;</a></li>
+    <li><a href="#">level 1</a></li>
+    <li><a href="#">level 2</a></li>
+    <li><a href="#" aria-label="Next">&raquo;</a></li>
+  </ol>
+</nav>
+Notes: Pagination can be sized up or down uing "pagination pagination-lg" or "pagination pagination-sm"
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
