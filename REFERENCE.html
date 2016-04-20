@@ -60,6 +60,7 @@ img {
   <div class="panel-body">
     <div class="well well-lg">This is a WELL <code>(&lt;div class="well well-lg">)</code> which means it is INSET. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim ex ducimus facere repudiandae a velit perferendis necessitatibus est, debitis consequatur inventore atque voluptates, id, voluptate temporibus nemo. Eum quae libero nam sint aliquid consequatur, fugiat quisquam? Facilis ratione dolore tenetur quam esse nostrum deserunt quod, minus repudiandae ab recusandae.</div>
   </div>
+  <h4>&nbsp;&nbsp;Tables look good inside panels for <i>mobile</i></h4>
 <div class="table-responsive">
   <table class="table">
     <htead>
@@ -88,7 +89,7 @@ img {
   </table>
 </div>
 <br>
-    <div class="panel-footer">
+    <div class="panel-footer"><code>div.panel-footer</code><br>
       Contextual classes for panel: <code>.panel-default, .panel-primary, .panel-success, .panel-info, .panel-warning, or .panel-danger</code>
     </div>
   </div>
@@ -859,7 +860,7 @@ Good for places where there are not columns<br>
       <div id="idAccordion" class="panel-group" >
         <div class="panel panel-default">
           <div id="idHeading1" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel1" data-toggle="collapse" data-parent='#idAccordion'>Expand 1</a></h3>
+            <h3 class="panel-title"><a href="#idPanel1"  data-toggle="collapse" data-parent='#idAccordion'>Expand 1</a></h3>
           </div>
         </div>
         <div id='idPanel1' class="panel-collapse collapse in">
@@ -869,7 +870,7 @@ Good for places where there are not columns<br>
         </div>
         <div class="panel panel-default">
           <div id="idHeading2" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel2" class='collapsed' data-toggle="collapse" data-parent='#idAccordion'>Expand 2</a></h3>
+            <h3 class="panel-title"><a href="#idPanel2" class='collapsed'   data-toggle="collapse" data-parent='#idAccordion'>Expand 2</a></h3>
           </div>
         </div>
         <div id='idPanel2' class="panel-collapse collapse ">
@@ -879,7 +880,7 @@ Good for places where there are not columns<br>
         </div>
         <div class="panel panel-default">
           <div id="idHeading3" class="panel-heading">
-            <h3 class="panel-title"><a href="#idPanel3" class='collapsed' data-toggle="collapse" data-parent='#idAccordion'>Expand 3</a></h3>
+            <h3 class="panel-title"><a href="#idPanel3" class='collapsed'    data-toggle="collapse" data-parent='#idAccordion'>Expand 3</a></h3>
           </div>
         </div>
         <div id='idPanel3' class="panel-collapse collapse">
@@ -926,6 +927,18 @@ Good for places where there are not columns<br>
 
   <div class="panel-footer">TIP: Remove the <code>href</code> to prevent accidental link jumps</div>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Example of .affix </h3> </div>
+
+  <div class="panel-body">
+<iframe style='width:100%; height:200px' src="Affix.html"></iframe>
+  </div>
+
+  <div class="panel-footer">Notes:</div>
+</div>
+
+
 </BR></BR>
 
 ////////////////////////////////////////////////////

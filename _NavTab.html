@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAV REFERENCE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<style>
+  * {
+    font-size:16px;
+  }
+body {
+  margin:1em;
+}
+
+img {
+  padding:1em;
+}
+
+.media img {
+  width:150px;
+}
+
+.cSimpleBorder {
+  border:1px solid gray;
+}
+
+.panel-title {
+  font-size:20px;
+  font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+  Notes:
+  * Give the 'li' class='active' NOT the 'a'
+  * Stack vertically using nav-stacked
+  * Justify using nav-justified
+  * to align content with navs, put the nav in a container, for navbar add a &lt;div between nav and &lt;ul
+
+  .nav.nav-tabs
+<nav>
+  <ul class="nav nav-tabs">
+    <li><a href="#">Nav1</a></li>
+    <li class='active'><a href="#" >Nav2</a></li>
+    <li><a href="#">Nav3</a></li>
+    <li><a href="#">Nav4</a></li>
+    <li><a href="#">Nav5</a></li>
+  </ul>
+</nav>
+
+<hr>
+<nav>
+  .nav.nav-pils
+  <ul class="nav nav-pills">
+    <li><a href="#">Nav1</a></li>
+    <li class='active'><a href="#">Nav2</a></li>
+    <li><a href="#">Nav3</a></li>
+    <li><a href="#">Nav4</a></li>
+    <li><a href="#">Nav5</a></li>
+  </ul>
+</nav>
+
+<hr>
+Notes:
+ this cannot be justified like pills
+ This will automatically stack at XS
+ For navbar, the nav must add either navbar-default or navbar-inverse
+  Option: add navbar-fixed-bottom/top to fix the nav while scrolling (if this is done add padding-top to the first content so it is not hidden under the nav)
+
+  .nav.navbar-nav
+<nav class='navbar navbar-inverse'>
+  <ul class="nav navbar-nav">
+    <li><a href="#">Nav1</a></li>
+    <li class='active'><a href="#">Nav2</a></li>
+    <li><a href="#">Nav3</a></li>
+    <li><a href="#">Nav4</a></li>
+    <li><a href="#">Nav5</a></li>
+  </ul>
+</nav>
+
+Notes: to change the navbar appearance, override the .navbar-default css
+and change the background-color and border
+Also change navbar-nav/li/a
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>

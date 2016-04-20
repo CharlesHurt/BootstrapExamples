@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAV EXTRAS REFERENCE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<style>
+  * {
+    font-size:16px;
+  }
+body {
+  margin:1em;
+}
+
+img {
+  padding:1em;
+}
+
+.media img {
+  width:150px;
+}
+
+.cSimpleBorder {
+  border:1px solid gray;
+}
+
+.panel-title {
+  font-size:20px;
+  font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+Notes:
+ 
+
+  * Add branding with div.navbar-header below nav.navbar.navbar-default and above ul.nav.navbar-nav
+  div.navbar-header
+   a.navbar-brand href="#" usually linked to the homepage of site, c/b image or text here.
+   BRAND shows slightly different to differenciate itself from the nav items
+   This might work with pills and tabs too
+   This is a good place for search functions and login buttons
+   As smaller resolutions, the Branding and search might need to be hidden
+
+   Try this as navbar-right too (this is like saying "Float right")
+  .nav.navbar-nav
+<nav class='navbar navbar-inverse'>
+  <div class="navbar-header"><a href="#" class="navbar-brand">BRAND</a><p class="navbar-text">This is p.navbar-text to augment </p></div>
+
+  <ul class="nav navbar-nav">
+    <li><a href="#">Nav1</a></li>
+    <li class='active'><a href="#">Nav2</a></li>
+    <li><a href="#">Nav3</a></li>
+    <li><a href="#" class='dropdown-toggle'
+                    data-toggle='dropdown'
+                    role='button'
+                    aria-haspopup='true'
+                    aria-expanded='false'>Nav4<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Sub-option 1</a></li>
+            <li><a href="">Sub-option 2</a></li>
+            <li><a href="">Sub-option 3</a></li>
+          </ul>
+                  </li>
+    <li><a href="#">Nav5</a></li>
+  </ul>
+  <form role="search" class="navbar-form navbar-left">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <button type='submit' class="btn btn-default navbar-btn">Search</button>
+
+  </form>
+  <button class="btn btn-default navbar-btn navbar-right">sign in</button>
+</nav>
+
+Notes: to change the navbar appearance, override the .navbar-default css
+and change the background-color and border
+Also change navbar-nav/li/a
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
