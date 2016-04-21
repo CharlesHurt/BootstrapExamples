@@ -395,91 +395,92 @@ img {
   </div>
 </div>
 
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title">Validation classes </h3> </div>
 
-<h1>Validation classes</h1>
-has-warning, has-error, has-success <br>
-On the label component add a class='control-label' in order for it to reflect the status colors.
-<form>
-  <div class="form-group has-warning"><label for="idInput1">Name:</label><input id="idInput1" type="text" class="form-control" ></div>
-</form>
+  <div class="panel-body">
+    has-warning, has-error, has-success <br>
+    On the label component add a class='control-label' in order for it to reflect the status colors.
+    <form>
+      <div class="form-group has-warning"><label for="idInput1">Name:</label><input id="idInput1" type="text" class="form-control" ></div>
+    </form>
 
-Adding validation feedback icons.  This requires a text inputs with class='form-control'. First add a class='has-feedback'
-<pre>
-
-&lt;div class='form-group has-success has-feedback'>&lt;label for="idInput2" class="control-label">&lt;/label>
-&lt;input id='idInput2' type="text" class="form-control">
-&lt;span class="glyphicon glyphicon-ok form-control-feedback">&lt;/span>
-</pre>
-The form-control-feedback will add a checkmark on the right when the field is valid. Use aria-hidden="true" to ensure this icon will not confuse
-screen readers. Instead add something like this for screen readers only:
-&lt;span id='nameStatus' class='sr-only'>Success&lt;/span> Finally, link this with the input field by adding this to the input: aria-describedby='nameStatus'
-
-<h1>Input groups</h1>
-Combine fields together with other elements.
-Notice "disabled" can be applied at different levels, like form, form-group and field-set
-<form>
-  <div class="form-group">
-    <div class="input-group">
-      <span class="input-group-addon">$</span>
-      <input type="text" class="form-control">
-    </div>
-    <br>
-    <div class="input-group">
-      <span class="input-group-addon">$</span>
-      <input type="text" class="form-control">
-      <span class="input-group-addon">.00</span>
-    </div>
-    <br>
-    <div class="input-group">
-      <span class="input-group-addon"><input type="checkbox"></span>
-      <input type="text" class="form-control">
-    </div>
-<br>
-    <div class="input-group">
-      <input type="text" class="form-control">
-      <span class="input-group-btn"><button class='btn btn-default'>Search</button></span>
-    </div>
-
-
+    Adding validation feedback icons.  This requires a text inputs with class='form-control'. First add a class='has-feedback'
+    <pre>
+    &lt;div class='form-group has-success has-feedback'>&lt;label for="idInput2" class="control-label">&lt;/label>
+    &lt;input id='idInput2' type="text" class="form-control">
+    &lt;span class="glyphicon glyphicon-ok form-control-feedback">&lt;/span>
+    </pre>
+    The form-control-feedback will add a checkmark on the right when the field is valid. Use aria-hidden="true" to ensure this icon will not confuse
+    screen readers. Instead add something like this for screen readers only:
+    &lt;span id='nameStatus' class='sr-only'>Success&lt;/span> Finally, link this with the input field by adding this to the input: aria-describedby='nameStatus'
   </div>
-</form>
 
-<h1>Dropdowns</h1>
+  <div class="panel-footer">Notes:</div>
+</div>
 
-<div class="dropdown">
-  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make  SIMPLE<span class="caret"></span></button>
-  <ul class='dropdown-menu'>
-    <li>Ferrari</li>
-    <li>Maserati</li>
-    <li>Aston-Martin</li>
-  </ul>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title">Input groups </h3> </div>
+
+  <div class="panel-body">Combine fields together with other elements.
+  Notice "disabled" can be applied at different levels, like form, form-group and field-set
+  <form>
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon"><input type="checkbox"></span>
+        <input type="text" class="form-control">
+      </div>
+  <br>
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn"><button class='btn btn-default'>Search</button></span>
+      </div>
+
+
+    </div>
+  </form> </div>
+
+  <div class="panel-footer">Notes:</div>
 </div>
-<br>
-<div class="dropdown">
-  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (class='dropdown-header')<span class="caret"></span></button>
-  <ul class='dropdown-menu'>
-    <li class='dropdown-header'>Italian</li>
-    <li>Ferrari</li>
-    <li>Maserati</li>
-    <li class='dropdown-header'>British</li>
-    <li>Aston-Martin</li>
-  </ul>
-</div>
-<br>
-<div class="dropdown">
-  <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (li role='separator' class='divider')<span class="caret"></span></button>
-  <ul class='dropdown-menu'>
-    <li>Ferrari</li>
-    <li>Maserati</li>
-    <li role='separator' class='divider'></li>
-    <li>Aston-Martin</li>
-  </ul>
-</div>
-<br>
-<div class="dropdown">
-  <div class="btn-group">
-    <button type='button' class="btn btn-info" >Search makes</button>
-    <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make <span class="caret"></span></button>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Dropdowns </h3> </div>
+
+  <div class="panel-body"><div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make  SIMPLE<span class="caret"></span></button>
+    <ul class='dropdown-menu'>
+      <li>Ferrari</li>
+      <li>Maserati</li>
+      <li>Aston-Martin</li>
+    </ul>
+  </div>
+  <br>
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (class='dropdown-header')<span class="caret"></span></button>
+    <ul class='dropdown-menu'>
+      <li class='dropdown-header'>Italian</li>
+      <li>Ferrari</li>
+      <li>Maserati</li>
+      <li class='dropdown-header'>British</li>
+      <li>Aston-Martin</li>
+    </ul>
+  </div>
+  <br>
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make (li role='separator' class='divider')<span class="caret"></span></button>
     <ul class='dropdown-menu'>
       <li>Ferrari</li>
       <li>Maserati</li>
@@ -487,33 +488,60 @@ Notice "disabled" can be applied at different levels, like form, form-group and 
       <li>Aston-Martin</li>
     </ul>
   </div>
-</div>
-
-<h1>Button groups</h1>
-<div class='btn-group'>
-  <button type='button' class="btn btn-default" >btn-group Ferrari</button>
-  <button type='button' class="btn btn-default" >Maserati</button>
-  <button type='button' class="btn btn-default" >Aston-Martin</button>
-</div>
-<br><br>
-<div class='btn-group-vertical'>
-  <button type='button' class="btn btn-default" >Vertical Ferrari</button>
-  <button type='button' class="btn btn-default" >Maserati</button>
-  <button type='button' class="btn btn-default" >Aston-Martin</button>
-</div>
-
-<br><br>
-
-<br>
-<div class="btn-group btn-group-justified">
-  <div class='btn-group'>
-    <button type='button' class="btn btn-default" >Justified Ferrari</button></div>
-  <div class='btn-group'>
-    <button type='button' class="btn btn-default" >Maserati</button></div>
-  <div class='btn-group'>
-    <button type='button' class="btn btn-default" >Aston-Martin</button></div>
+  <br>
+  <div class="dropdown">
+    <div class="btn-group">
+      <button type='button' class="btn btn-info" >Search makes</button>
+      <button class="btn btn-info dropdown-toggle" data-toggle='dropdown'>Make <span class="caret"></span></button>
+      <ul class='dropdown-menu'>
+        <li>Ferrari</li>
+        <li>Maserati</li>
+        <li role='separator' class='divider'></li>
+        <li>Aston-Martin</li>
+      </ul>
+    </div>
   </div>
 </div>
+
+  <div class="panel-footer">Notes:</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3 class="panel-title"> Button groups </h3> </div>
+
+  <div class="panel-body"><div class='btn-group'>
+    <button type='button' class="btn btn-default" >btn-group Ferrari</button>
+    <button type='button' class="btn btn-default" >Maserati</button>
+    <button type='button' class="btn btn-default" >Aston-Martin</button>
+  </div>
+  <br><br>
+  <div class='btn-group-vertical'>
+    <button type='button' class="btn btn-default" >Vertical Ferrari</button>
+    <button type='button' class="btn btn-default" >Maserati</button>
+    <button type='button' class="btn btn-default" >Aston-Martin</button>
+  </div>
+
+  <br><br>
+
+  <br>
+  <div class="btn-group btn-group-justified">
+    <div class='btn-group'>
+      <button type='button' class="btn btn-default" >Justified Ferrari</button></div>
+    <div class='btn-group'>
+      <button type='button' class="btn btn-default" >Maserati</button></div>
+    <div class='btn-group'>
+      <button type='button' class="btn btn-default" >Aston-Martin</button></div>
+    </div>
+  </div>
+</div>
+
+  <div class="panel-footer">Notes:</div>
+</div>
+
+
+
+
+
 
 <h1>Navigation</h1>
 Three types of navs: tabs, pills, nav-bars
@@ -620,19 +648,19 @@ The add a class to prevent the top of the content from going under the top nav 7
 Notes
 One **li** should have class="active"
 It is not necessary to wrap the
-<iframe style='width:100%' src="NavPillHoriz.html"></iframe>
-<iframe style='width:100%' src="NavTabHoriz.html"></iframe>
-<iframe style='width:100%; height:200px' src="NavPillStacked.html"></iframe>
-<iframe style='width:100%; height:200px' src="NavTabStacked.html"></iframe>
-<iframe style='width:100%; height:200px' src="NavPillJustified.html"></iframe>
-<iframe style='width:100%; height:200px' src="NavTabJustified.html"></iframe>
+<iframe style='width:100%' src="NavPillHoriz.html"></iframe><br><br>
+<iframe style='width:100%' src="NavTabHoriz.html"></iframe><br><br>
+<iframe style='width:100%; height:200px' src="NavPillStacked.html"></iframe><br><br>
+<iframe style='width:100%; height:200px' src="NavTabStacked.html"></iframe><br><br>
+<iframe style='width:100%; height:200px' src="NavPillJustified.html"></iframe><br><br>
+<iframe style='width:100%; height:200px' src="NavTabJustified.html"></iframe><br><br>
 
-<BR>page-header
-<iframe style='width:100%; height:200px' src="Page-Header.html"></iframe>
+<h3>page-header</h3>
+<iframe style='width:100%; height:200px' src="Page-Header.html"></iframe><br><br>
 
-<BR>jumbotron
-<iframe style='width:100%; height:200px' src="Jumbotron.html"></iframe>
-<BR>
+<h3>jumbotron</h3>
+<iframe style='width:100%; height:200px' src="Jumbotron.html"></iframe><br><br>
+
 <div class="panel panel-default">
   <div class="panel-heading"> <h3 class="panel-title"> Labels and Badges </h3> </div>
 
@@ -929,7 +957,7 @@ Good for places where there are not columns<br>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"> <h3 class="panel-title"> Example of .affix </h3> </div>
+  <div class="panel-heading"> <h3 class="panel-title"> Example of .affix (Notice the nav is highlighted) when it's region is scrolled to.</h3> </div>
 
   <div class="panel-body">
 <iframe style='width:100%; height:200px' src="Affix.html"></iframe>
@@ -938,45 +966,7 @@ Good for places where there are not columns<br>
   <div class="panel-footer">Notes:</div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading"> <h3 class="panel-title"> Breadcrumbs, Pagers and Pagination </h3> </div>
 
-  <div class="panel-body">
-    <ol class='breadcrumb'>
-    <li><a href="#">home</a></li>
-    <li><a href="#">level 2</a></li>
-    <li><a href="#">level 3</a></li>
-    </ol>
-  </div>
-
-  <div class="container">
-
-    <ul class="pager">
-      <li class="previous disabled"><a href="#"><span aria-hidden='true'>&larr;</span> Older</a></li>
-      <li class="next"><a href="#">Newer <span aria-hidden='true'>&rarr;</span></a></li>
-    </ul>
-  </div>
-
-
-  <div class="container">
-    <nav>
-      <ol class='pagination'>
-        <li><a href="#" aria-label="Previous">&laquo;</a></li>
-        <li><a href="#">level 1</a></li>
-        <li><a href="#">level 2</a></li>
-        <li><a href="#" aria-label="Next">&raquo;</a></li>
-      </ol>
-    </nav>
-  </div>
-  <div class="panel-footer">Notes: <br>
-    Pagination can be sized up or down uing "pagination pagination-lg" or "pagination pagination-sm"</div>
-</div>
-
-
-
-</BR></BR>
-
-////////////////////////////////////////////////////
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script>
